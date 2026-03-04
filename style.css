@@ -1,24 +1,50 @@
+/* Couleurs de base du site */
+:root {
+    --bleu: #004aad;
+    --jaune: #ffde59;
+    --gris: #f4f4f4;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--gris);
 }
 
-header {
-    background-color: #FF8C00; /* Orange Discount */
+/* Style du Menu (DAOUDA peut modifier ici) */
+.navbar {
+    background-color: var(--bleu);
     color: white;
-    padding: 20px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span { color: var(--jaune); font-weight: bold; }
+
+.menu { list-style: none; display: flex; gap: 20px; }
+
+/* Style de la Pub (MAMADOU peut modifier ici) */
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 60px;
     text-align: center;
-    border-bottom: 5px solid #003366; /* Bleu foncé */
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
+/* Style des Produits (PAPI peut modifier ici) */
+.container { padding: 20px 50px; }
+
+.grille-produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.container {
+.carte {
+    background: white;
     padding: 20px;
+    border: 1px solid #ddd;
     text-align: center;
 }
